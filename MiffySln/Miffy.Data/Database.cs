@@ -10,6 +10,10 @@ namespace Miffy.Data
 {
     public class Database
     {
+        static Database()
+        {
+            DapperExtensions.DapperExtensions.SqlDialect = new DapperExtensions.Sql.MySqlDialect();
+        }
         public static DbConnection GetConn()
         {
             //var str = "Server=172.200.2.3;Database=forest;User=root;Password=123;Charset=utf8;";

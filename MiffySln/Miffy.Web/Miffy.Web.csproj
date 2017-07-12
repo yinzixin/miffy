@@ -112,7 +112,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Common\BaseController.cs" />
+    <Compile Include="Common\Filters.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserAdminController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -121,12 +124,57 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\common.css" />
+    <Content Include="css\new_user.css" />
+    <Content Include="css\page_editor.css" />
+    <Content Include="css\page_list.css" />
+    <Content Include="css\page_login.css" />
+    <Content Include="css\treeDetail.css" />
+    <Content Include="css\user_manage.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\bg-imgs.jpg" />
+    <Content Include="images\bg-map.png" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bg1.png" />
+    <Content Include="images\ewm.png" />
+    <Content Include="images\head_img.jpg" />
+    <Content Include="images\icon-bl.png" />
+    <Content Include="images\icon-card.png" />
+    <Content Include="images\icon-close.png" />
+    <Content Include="images\icon-delete.png" />
+    <Content Include="images\icon-disable.png" />
+    <Content Include="images\icon-editor.png" />
+    <Content Include="images\icon-enable.png" />
+    <Content Include="images\icon-img.png" />
+    <Content Include="images\icon-list.png" />
+    <Content Include="images\icon-list2.png" />
+    <Content Include="images\icon-lock.png" />
+    <Content Include="images\icon-password.png" />
+    <Content Include="images\icon-setting.png" />
+    <Content Include="images\icon-tit.png" />
+    <Content Include="images\icon-up.png" />
+    <Content Include="images\icon-user.png" />
+    <Content Include="images\icon-xl.png" />
+    <Content Include="images\icon_book.png" />
+    <Content Include="images\icon_book_active.png" />
+    <Content Include="images\icon_else.png" />
+    <Content Include="images\icon_else_active.png" />
+    <Content Include="images\icon_loc.png" />
+    <Content Include="images\icon_loc_active.png" />
+    <Content Include="images\icon_tree.png" />
+    <Content Include="images\icon_tree_active.png" />
+    <Content Include="images\sign-out.png" />
+    <Content Include="js\ajaxfileupload.js" />
+    <Content Include="js\editor.js" />
+    <Content Include="js\new_user.js" />
+    <Content Include="js\page_list.js" />
+    <Content Include="js\treeDetail.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\local.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -154,6 +202,8 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\UserAdmin\Login.cshtml" />
+    <Content Include="Views\UserAdmin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -170,6 +220,10 @@
     <ProjectReference Include="..\Miffy.Data\Miffy.Data.csproj">
       <Project>{d2e6ae1a-d5b7-48e3-ab88-b4379b57e413}</Project>
       <Name>Miffy.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Miffy.Model\Miffy.Model.csproj">
+      <Project>{5ef9e6eb-05b2-4b71-b21e-b6e5250fe1db}</Project>
+      <Name>Miffy.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
